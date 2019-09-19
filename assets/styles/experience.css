@@ -1,0 +1,85 @@
+#experience {
+  width: 100%;
+  height: auto;
+  padding-bottom: 25px;
+}
+
+.experience-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+h3, h4, p {
+  font-family: 'Barlow Condensed', sans-serif;}
+
+.work {
+  width: 65%;
+  height: auto;
+  margin: auto;
+}
+
+#wk {
+  width: 100%;
+}
+
+#tu {
+  width: 60%;
+}
+
+#payal {
+  width: 80%;
+}
+
+
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f100;
+    perspective: 1000px;  
+    /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front,
+  .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    transform: rotateY(180deg);
+  }
+

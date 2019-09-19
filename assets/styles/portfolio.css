@@ -1,0 +1,78 @@
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../images/portfolio/footer_lodyas.png);
+  color: white;
+  align-items: center;
+  width: 30vw;
+  height: 80vh;
+  margin: 10px;
+  position: relative;
+}
+
+.project-summary {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  padding: 15px;
+  flex: none;
+}
+
+
+.project-img {
+  /* width: 400px; */
+  width: 100%;
+  height: 50%;
+  align-self: center;
+}
+
+.buttons {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 5px;
+}
+
+.button-link {
+  background-color: rgb(223, 222, 222);  
+  color: black; 
+  border: 1px solid rgb(218, 146, 138);
+  padding: 10px;
+  margin: 5px;
+  width: 120px;
+}
+
+.button-link:hover {
+  background-color: rgb(218, 146, 138);
+  color: white;
+}
+
+@media screen and (max-width: 1100px) {
+  .project-card {
+    display: flex;
+  flex-direction: column;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .project-card {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .project-card {
+    width: 100%;
+  }
+}

@@ -1,0 +1,73 @@
+    #skills {
+      background-image: url(../images/interlaced.png);
+      padding-bottom: 20px;
+    }
+    .collapsible-container {
+      display: flex;
+      justify-content: center
+    }
+  
+    .column {
+      width: 50%;
+      padding: 10px;
+    }
+    
+    .row {
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    @media screen and (max-width: 800px) {
+      .row {
+        display: flex;
+        flex-direction: column;
+      }
+      .column {
+        width: 100%;
+      }
+    }
+    .collapsible {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: rgb(218, 146, 138);  
+    }
+    
+    .summary {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+      background-color: #f1f1f1;
+    
+    }
+    .collapsible:after {
+      content: '\02795'; /* Unicode character for "plus" sign (+) */
+      font-size: 13px;
+      color: white;
+      float: right;
+      margin-left: 5px;
+    }
+    
+    .active:after {
+      content: "\2796"; /* Unicode character for "minus" sign (-) */
+    }
+    
+    .zoom {
+      transition: transform .2s; /* Animation */
+      margin: 10% 0 25% 23%;
+    }
+    
+    .zoom:hover {
+      transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    } 
