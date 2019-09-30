@@ -18,7 +18,13 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="./assets/js/navbar.js"></script>
     <title>Rebeacca Modayil</title>
-
+    <script>
+        window.addEventListener('resize', () => {
+        let vh = window.innerHeight * 0.01;
+        // Then we set the value in the --vh custom property to the root of the document
+        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        
+    </script>
 </head>
 
 <body>
@@ -54,7 +60,6 @@
     </nav>
 
     <div class="main-img"></div>
-    <div class="mobileMain-img"></div>
 
     <a id='contact'></a>
     <div id="about">
