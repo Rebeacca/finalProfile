@@ -36,11 +36,10 @@ h5 {
 
 /* Footer */
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: rgb(245, 243, 243);
+  background-color: #fadfd044;
   color: black;
   text-align: center;
   padding: 15px;
