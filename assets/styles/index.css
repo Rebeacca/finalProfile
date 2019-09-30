@@ -11,7 +11,7 @@ html {
   background-size: cover;
 }
 
-#main-img-container {
+.main-img-container {
   display: none;
 }
 
