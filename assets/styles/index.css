@@ -5,6 +5,7 @@ html {
 .main-img {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  min-height: -webkit-fill-available;
   width: 100vw;
   background-position: center;
   background-image: url(../images/rebeacca.jpg);
