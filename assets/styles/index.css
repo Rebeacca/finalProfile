@@ -2,15 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
-.main-img {
+.desktop-main-img {
   height: 100vh;
-  height: calc(var(--vh, 1vh) * 100);
-  min-height: -webkit-fill-available;
   width: 100vw;
   background-position: center;
   background-image: url(../images/rebeacca.jpg);
   background-attachment: fixed;
   background-size: cover;
+}
+
+#main-img-container {
+  display: none;
 }
 
 h2 {
@@ -49,4 +51,17 @@ footer {
 
 .social-img {
   padding: 5px;
+}
+
+@media all and (max-width: 800px) {
+  .main-img-container {
+    display: flex;
+  }
+  .desktop-main-img {
+    display: none;
+  }
+  #mobile-main-img {
+    padding-top: 80px;
+    width: 100%;
+  }
 }
