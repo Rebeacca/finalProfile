@@ -130,4 +130,13 @@ h3, h4, p {
     padding-bottom: 10px;
   }
 
+  #mobile-wk {
+    width: 40vw;
+    padding-bottom: 0;
+  }
+
+  #mobile-mua {
+    padding-bottom: 30px;
+  }
+
 }
