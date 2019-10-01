@@ -1,6 +1,6 @@
 #about {
     width: 100vw;
-    height: auto;
+    height: 30vh;
     background-image: url(../images/about-background.png);
     background-attachment: fixed;
     background-size: cover;
@@ -8,17 +8,23 @@
     padding: 0;
     margin: 0;
     display: flex;
+    justify-content: center;
 }
+
 
  #about-summary {
     text-align: center;
-     margin: 100px;
+    align-self: center;
+     /* margin: 100px; */
      padding: 20px 200px;
      border-style: ridge;
      border-width: 1px;
-     border-color: rgba(0, 0, 0, 0.205);
-     background-color: #fafafa85;
-}
+     border-color:  rgba(253, 144, 162, 0.541);
+     background-color: #fafafaa2;
+     font-size: 25px;
+     font-family: 'Barlow Condensed', sans-serif;
+     color: rgb(253, 144, 162);
+    }
 
 @media screen and (max-width: 1000px) {
     #about-summary {
